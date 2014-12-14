@@ -30,7 +30,7 @@ var express, fs, noticeboard,
         });
 
     // load html
-        fs.readFile('./src/client/index.html', 'utf8', function(error, html){
+        fs.readFile('./bin/client/index.html', 'utf8', function(error, html){
 
           if(error){ 
           

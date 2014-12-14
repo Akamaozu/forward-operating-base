@@ -3,12 +3,12 @@ module.exports = function(grunt){
   // default config for grunt
     var config = {
       pkg: grunt.file.readJSON('package.json'),
-      srcDir: 'src',  
+      srcStyles: 'src/client/css',  
       buildDir: 'bin'
     };
   
   // autoload grunt task configs
-  //  grunt.util._.extend(config, loadConfig('./grunt_tasks/options/'));
+    grunt.util._.extend(config, loadConfig('./grunt_tasks/options/'));
   
   // load configs 
     grunt.initConfig(config);
@@ -17,11 +17,11 @@ module.exports = function(grunt){
     require('load-grunt-tasks')(grunt, {
 
       scope: 'devDependencies',
-      pattern: ['grunt-*', '!grunt-cli']
+      pattern: ['grunt-*']
     });
 
   // default grunt task
-  //  grunt.loadTasks('grunt_tasks');
+    grunt.loadTasks('grunt_tasks');
 
   // helper function: autoload grunt configs from path
     function loadConfig(path) {
