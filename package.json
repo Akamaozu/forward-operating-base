@@ -15,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/Akamaozu/forward-operating-base/issues"
   },
-  "homepage": "https://github.com/Akamaozu/forward-operating-base"
+  "homepage": "https://github.com/Akamaozu/forward-operating-base",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserifying": "^1.0.8",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-html-build": "^0.3.2",
+    "load-grunt-tasks": "^1.0.0"
+  },
+  "dependencies": {
+    "cjs-noticeboard": "0.0.2",
+    "express": "^4.10.6"
+  }
 }
