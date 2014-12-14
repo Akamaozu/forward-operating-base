@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "cjs-noticeboard": "0.0.2",
-    "express": "^4.10.6"
+    "express": "^4.10.6",
+    "fs": "0.0.2"
   }
 }
